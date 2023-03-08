@@ -18,15 +18,6 @@ const loadMusic = () => {
     
     fetch('https://ip-geo-location4.p.rapidapi.com/?ip=8.8.8.8', options)
         .then(response => response.json())
-        .then(response => {
-            topMusic = response
-            crearTarjetas()
-        })
+        .then(response => console.log(response))
         .catch(err => console.error(err));
-}
-
-const crearTarjetas = () => {
-    topMusic.forEach((artista) => {
-        discoArtist.querySelector('img')
-    })
 }
